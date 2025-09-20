@@ -35,6 +35,6 @@
     @apply text-lg text-gray-300 mb-8;
   }
   .greet-section {
-    @apply bg-blend-darken flex-col m-10;
+    @apply bg-blend-darken flex-col m-5 md:m-15;
   }
 }
