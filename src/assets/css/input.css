@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #7c3aed;
+  --color-primary-dark: #6d28d9;
+  --color-primary-darker: #4c1d95;
+
+  --color-bg: #0b0b0f;
+  --color-bg-dark: #111827;
+
+  --color-text: #ffffff;
+  --color-text-muted: #d1d5db;
+}
+
+@reference base, components, utilities;
+
+@layer components {
+  .btn-primary {
+    @apply bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition;
+  }
+
+  .hero {
+    @apply h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-purple-900 to-black text-white;
+  }
+
+  .hero-title {
+    @apply text-5xl font-extrabold mb-4;
+  }
+
+  .hero-subtitle {
+    @apply text-lg text-gray-300 mb-8;
+  }
+  .greet-section {
+    @apply bg-blend-darken flex-col m-10;
+  }
+}
